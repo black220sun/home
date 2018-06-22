@@ -136,7 +136,6 @@ if (( $+commands[git] )) ; then
     alias gsta='git status'
     alias gm='git merge origin'
     alias gmm='git merge origin master'
-    alias gp='git push --set-upstream origin'
     alias gpl='git pull origin'
     alias gpm='git pull origin master'
     alias gd='git diff'
@@ -148,5 +147,16 @@ if (( $+commands[git] )) ; then
     alias ga='git add'
     alias gcom='git commit -m'
     alias gacom='git commit -am'
+    alias gsa='git stash apply'
+    alias gsl='git stash list'
+    alias gsp='git stash pop'
+    alias gss='git stash'
+    function gp() {
+	local branch=$1
+	if [ -z $branch ] ; then
+	    branch=`git branch | cut -f2 -d' '`
+	fi
+	git push --set-upstream origin $branch
+    }
 fi
 
