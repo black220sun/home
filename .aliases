@@ -1,0 +1,152 @@
+# color
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# ls
+alias ll='ls -ahlF'
+alias l='ll'
+alias la='ls -A'
+
+# common
+alias clr='clear'
+alias sct='$SUDO systemctl'
+alias fh='find . -name'
+alias fhi='find . -iname'
+alias \?='which'
+alias mk='mkdir -pv'
+alias rm='rm -v'
+alias rmr='rm -rvf'
+alias rmv='rm -rf'
+alias cp='cp -r'
+function mcd() {
+    mkdir -p $1
+    cd $1
+}
+alias clog='cat **/*.log'
+alias clog.='cat *.log' 
+alias p='ping -c 1 8.8.8.8'
+
+# path
+alias ~='cd $HOME'
+alias cd-='cd -'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias .......='cd ../../../../../..'
+alias cdr='cd /'
+function find-aux() {
+    $SUDO find $1 -type d -name $2 -print -quit 2> /dev/null
+}
+function jmp() {
+    if [[ -z $1 ]] ; then
+	cd $HOME
+	return
+    fi
+    local root=$1
+    local dir=$2
+    if [[ -z $dir ]] ; then
+	root=$HOME
+	dir=$1
+    fi
+    if [[ ! -e $root ]] ; then
+       root=`find-aux $HOME $root`
+    fi
+    cd `find-aux $root $dir`
+}
+alias jmp.='jmp .'
+alias jmpr='jmp /'
+
+# sudo
+SUDO=''
+if (( $+commands[sudo] )) ; then
+    alias s='sudo'
+    if [[ $EUID -ne 0 ]] ; then
+	SUDO='sudo'
+    fi
+fi
+
+# apt
+if (( $+commands[apt] )) ; then
+    alias apt='$SUDO apt'
+    alias pac='apt install'
+    alias pacs='apt search'
+    alias pacr='apr remove'
+    alias pacu='apt update && apt upgrade'
+fi
+
+# pacman
+if (( $+commands[pacman] )) ; then
+    alias pacman='$SUDO pacman'
+    alias pac='pacman -S --needed'
+    alias pacs='pacman -Ss'
+    alias pacr='pacman -Rs'
+    alias pacu='pacman -Syu'
+fi
+
+# yum
+if (( $+commands[yum] )) ; then
+    alias yum='$SUDO yum'
+    alias pac='yum install'
+    alias pacs='yum search'
+    alias pacr='yum remove'
+    alias pacu='yum upgrade'
+fi
+
+# emacs
+if (( $+commands[emacs] )) ; then
+    export EDITOR='emacs -nw'
+    alias em='emacs -nw'
+    alias sem='$SUDO emacs -nw'
+    alias ecfg='emacs -nw ~/.emacs'
+    alias ez='emacs -nw ~/.zshrc'
+    alias ea='emacs -nw ~/.aliases'
+    alias el='emacs -nw **/*.log'
+    alias el.='emacs -nw *.log'
+    alias et='emacs -nw *.txt'
+fi
+
+# zsh
+if [ -f ~/.zshrc ] ; then
+    alias zu='source ~/.zshrc'
+fi
+
+# launch
+if (( $+commands[firefox] )) ; then
+    alias ff='firefox'
+fi
+if (( $+commands[nautilus] )) ; then
+    alias nau='nautilus .&'
+elif (( $+commands[dolphin] )) ; then
+    alias nau='dolphin .&'
+fi
+if (( $+commands[systemsettings5] )) ; then
+    alias ss5='systemsettings5&'
+fi
+
+# git
+if (( $+commands[git] )) ; then
+    alias gst='git status -uno'
+    alias gsta='git status'
+    alias gm='git merge origin'
+    alias gmm='git merge origin master'
+    alias gp='git push --set-upstream origin'
+    alias gpl='git pull origin'
+    alias gpm='git pull origin master'
+    alias gd='git diff'
+    alias gf='git fetch'
+    alias gmt='git mergetool'
+    alias gc='git checkout'
+    alias gb='git branch'
+    alias branch='git checkout -b'
+    alias ga='git add'
+    alias gcom='git commit -m'
+    alias gacom='git commit -am'
+fi
+
