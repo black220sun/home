@@ -41,6 +41,7 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 alias cdr='cd /'
+alias cdi='cd $HOME/IdeaProjects'
 function find-aux() {
     $SUDO find $1 -type d -name $2 -print -quit 2> /dev/null
 }
@@ -77,7 +78,7 @@ if (( $+commands[apt] )) ; then
     alias apt='$SUDO apt'
     alias pac='apt install'
     alias pacs='apt search'
-    alias pacr='apr remove'
+    alias pacr='apt remove'
     alias pacu='apt update && apt upgrade'
 fi
 
