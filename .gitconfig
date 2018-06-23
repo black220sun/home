@@ -1,3 +1,12 @@
 [user]
 	email = shulepov.vlad@gmail.com
 	name = Vladislav Shulepov
+[merge]
+	tool = meld
+	conflictstyle = diff3
+[diff]
+	tool = meld
+	guitool = meld
+
+[difftool]
+	prompt = false
