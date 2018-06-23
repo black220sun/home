@@ -1,0 +1,12 @@
+[submodule "neotree"]
+	   path = .emacs.d/neotree
+	   url = https://github.com/jaypei/emacs-neotree.git
+[submodule "emacs-livedown"]
+	   path = .emacs.d/emacs-livedown
+	   url = https://github.com/shime/emacs-livedown.git
+[submodule "zsh-autosuggestions"]
+	   path = .zsh-plugins/zsh-autosuggestions
+	   url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "zsh-syntax-hightlighting"]
+	   path = .zsh-plugins/zsh-syntax-highlighting
+	   url = https://github.com/zsh-users/zsh-syntax-highlighting.git
