@@ -38,42 +38,46 @@ bindkey "\e[1;5C" forward-word
 bindkey "\e[1;5D" backward-word
 
 # prompt
+function set_battery () {
+  local acpi=`acpi`
+  echo "%F{green}[$(echo $acpi | cut -f4 -d' ')%% $(echo $acpi | cut -f5 -d' ')] "
+}
 function set_date() {
-    echo "%F{red}[$(date +"%a %b %d %T")]"
+  echo "%F{red}[$(date +"%a %b %d %T")]"
 }
 function set_pwd() {
-    echo "%F{yellow}${PWD/$HOME/~}%F{white}"
+  echo "%F{yellow}${PWD/$HOME/~}%F{white}"
 }
 function set_git() {
-    local branch=`git branch 2> /dev/null`
-    if [ ! -z $branch ] ; then
+  local branch=`git branch 2> /dev/null`
+  if [ ! -z $branch ] ; then
 	echo " %F{white}(on %F{magenta}$(echo $branch | cut -f2 -d' ')%F{white})"
-    fi
+  fi
 }
 function set_symbol() {
-    local color
-    if [[ $EUID -ne 0 ]] ; then
+  local color
+  if [[ $EUID -ne 0 ]] ; then
 	color=" %F{yellow}"
-    else
+  else
 	color=" %F{red}"
-    fi
-    echo "$color>%F{white} "
+  fi
+  echo "$color>%F{white} "
 }
 function set_zsh_prompt() {
     PROMPT="
-$(set_date) $(set_pwd):
+$(set_battery)$(set_date) $(set_pwd):
 %F{cyan}%n@%m$(set_git)$(set_symbol)"
 }
 precmd_functions+=(set_zsh_prompt)
 
 if [ -f ~/.aliases ] ; then
-    . ~/.aliases
+  . ~/.aliases
 fi
 
 if [ -f "$ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] ; then
-    source "$ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+  source "$ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
 if [ -f "$ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh" ] ; then
-    source "$ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh"
-    bindkey '`' autosuggest-accept
+  source "$ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh"
+  bindkey '`' autosuggest-accept
 fi

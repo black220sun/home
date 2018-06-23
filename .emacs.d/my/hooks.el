@@ -7,7 +7,6 @@
   (paredit-mode t))
 (add-hook 'prog-mode-hook 'prog-hook)
 (add-hook 'slime-repl-mode-hook 'prog-hook)
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-livedown"))
 (add-hook 'markdown-mode-hook 'livedown-preview)
 
 (defun new-before-save-hook ()
