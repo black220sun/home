@@ -1,0 +1,26 @@
+[General]
+confirmLogout=true
+excludeApps=
+loginMode=restorePreviousLogout
+offerShutdown=true
+screenCount=1
+shutdownType=2
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=108d9f9691000152966812800000072490001
+clientId2=108d9f9691000152981658500000013890007
+count=2
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_108d9f9691000152966812800000072490001_1529817598_710548
+program1=kwin_x11
+program2=firefox
+restartCommand1=kwin_x11,-session,108d9f9691000152966812800000072490001_1529817598_710548
+restartCommand2=/usr/bin/firefox,--sm-client-id,108d9f9691000152981658500000013890007
+restartStyleHint1=0
+restartStyleHint2=0
+userId1=black220sun
+userId2=black220sun
+wasWm1=true
+wasWm2=false

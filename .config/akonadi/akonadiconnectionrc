@@ -1,0 +1,6 @@
+[DBUS]
+Address="unix:abstract=/tmp/dbus-njwat5jxID,guid=ac636e74f8804095c4a84c125b2f2e9c"
+
+[Data]
+Method=UnixPath
+UnixPath=/tmp/akonadi-black220sun.dBk5Go/akonadiserver.socket

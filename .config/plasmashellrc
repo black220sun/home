@@ -1,0 +1,10 @@
+[PlasmaRunnerManager]
+LaunchCounts=1 services_jetbrains-toolbox.desktop,2 services_fingerprint-gui.desktop,1 services_caffeine.desktop,1 services_kcm_phonon.desktop
+pluginWhiteList=services,places,shell,bookmarks,recentdocuments,locations,baloosearch
+
+[PlasmaViews][Panel 1][Horizontal1920]
+panelVisibility=0
+thickness=38
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js

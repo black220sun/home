@@ -1,0 +1,6 @@
+[GuiConfig]
+includeDecorations=false
+includePointer=true
+transientOnly=false
+waitCaptureOnClick=false
+window-position=50,50

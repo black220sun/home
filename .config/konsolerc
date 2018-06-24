@@ -1,0 +1,21 @@
+[Desktop Entry]
+DefaultProfile=default.profile
+
+[Favorite Profiles]
+Favorites=
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+
+[MainWindow]
+Height 1080=1051
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPRAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1920=954
+Window-Maximized 1080x1920=true
+
+[Notification Messages]
+CloseAllTabs=true
+
+[TabBar]
+TabBarPosition=Top

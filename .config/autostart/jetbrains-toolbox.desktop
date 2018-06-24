@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Development;IDE;
+Exec=/home/black220sun/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
+Hidden=true
+Icon=/home/black220sun/.local/share/JetBrains/Toolbox/toolbox.svg
+MimeType=x-scheme-handler/jetbrains;
+Name=JetBrains Toolbox
+StartupNotify=false
+StartupWMClass=jetbrains-toolbox
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
