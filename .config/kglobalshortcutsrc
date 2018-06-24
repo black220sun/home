@@ -31,6 +31,7 @@ display=Display,Display,Switch Display
 [khotkeys]
 _k_friendly_name=KDE Daemon
 {12233b36-fe71-4f97-bf4d-6472f7abe538}=Meta+Print,none,Take Active Window Screenshot
+{23ac0f02-58cf-46f1-8066-4a9253264aa6}=Meta+Ctrl+\\\\,none,Shutdown
 {2d295974-2384-4f7d-b65f-594142516e11}=Print,none,Start Screenshot Tool
 {34d5e6a6-3c47-4c7b-96c9-5473c831172a}=Meta+Ctrl+D,none,Nautilus downloads
 {476813c9-9977-4b1b-a5d5-2e4d4c6766f4}=Meta+Ctrl+T,none,Konsole
@@ -43,6 +44,7 @@ _k_friendly_name=KDE Daemon
 {cb6fd2b5-c1ec-45f9-bd7b-796d34ad419e}=Ctrl+Alt+T,none,Konsole
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 {d8536cb2-6d9b-45e8-94b9-94ef65c27f0b}=Meta+Ctrl+N,none,Nautilus
+{f46fc790-d88e-4e2b-8fec-372ede05308e}=Meta+Ctrl+],none,Reboot
 {f908a49a-c218-442b-9f9a-91de67d018e7}=Meta+Ctrl+E,none,Emacs
 
 [kmix]
