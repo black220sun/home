@@ -1134,7 +1134,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_5_4Actions0]
-CommandURL=dolphin
+CommandURL=nautilus
 Type=COMMAND_URL
 
 [Data_5_4Conditions]
@@ -1160,7 +1160,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_5_5Actions0]
-CommandURL=dolphin /
+CommandURL=nautilus /
 Type=COMMAND_URL
 
 [Data_5_5Conditions]
@@ -1186,7 +1186,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_5_6Actions0]
-CommandURL=dolphin ~/Downloads
+CommandURL=nautilus ~/Downloads
 Type=COMMAND_URL
 
 [Data_5_6Conditions]
@@ -1212,7 +1212,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_5_7Actions0]
-CommandURL=dolphin ~/IdeaProjects
+CommandURL=nautilus ~/IdeaProjects
 Type=COMMAND_URL
 
 [Data_5_7Conditions]

@@ -13,7 +13,7 @@ alias la='ls -A'
 
 # common
 alias clr='clear'
-alias sct='$SUDO systemctl'
+alias sys='$SUDO systemctl'
 alias fh='find . -name'
 alias fhi='find . -iname'
 alias \?='which'
@@ -79,6 +79,7 @@ if (( $+commands[apt] )) ; then
     alias pac='apt install'
     alias pacs='apt search'
     alias pacr='apt remove'
+    alias paca='apt autoremove'
     alias pacu='apt update && apt upgrade'
 fi
 
@@ -141,8 +142,13 @@ if (( $+commands[git] )) ; then
     alias gpm='git pull origin master'
     alias gd='git diff'
     alias gdt='git difftool'
+    alias gdh='git diff HEAD'
+    alias gdth='git difftool HEAD'
     alias gr='git reset'
     alias grh='git reset --hard'
+    alias grm='git rm'
+    alias grf='git rm -f'
+    alias grc='git rm --cached'
     alias gf='git fetch'
     alias gmt='git mergetool'
     alias gc='git checkout'

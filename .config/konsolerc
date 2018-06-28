@@ -6,10 +6,13 @@ Favorites=
 
 [KonsoleWindow]
 AllowMenuAccelerators=true
+ShowMenuBarByDefault=false
+ShowWindowTitleOnTitleBar=true
 
 [MainWindow]
 Height 1080=1051
-State=AAAA/wAAAAD9AAAAAAAAB4AAAAPRAAAABAAAAAQAAAAIAAAACPwAAAAA
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPpAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1920=954
 Window-Maximized 1080x1920=true
@@ -19,3 +22,4 @@ CloseAllTabs=true
 
 [TabBar]
 TabBarPosition=Top
+TabBarVisibility=ShowTabBarWhenNeeded
