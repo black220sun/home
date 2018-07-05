@@ -12,6 +12,7 @@ alias l='ll'
 alias la='ls -A'
 
 # common
+alias untar='tar zfx *.tar.gz'
 alias clr='clear'
 alias sys='$SUDO systemctl'
 alias fh='find . -name'
@@ -43,7 +44,7 @@ alias .......='cd ../../../../../..'
 alias cdr='cd /'
 alias cdi='cd $HOME/IdeaProjects'
 function find-aux() {
-    $SUDO find $1 -type d -name $2 -print -quit 2> /dev/null
+    find $1 -type d -name $2 -print -quit 2> /dev/null
 }
 function jmp() {
     if [[ -z $1 ]] ; then
