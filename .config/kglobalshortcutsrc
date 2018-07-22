@@ -1,9 +1,35 @@
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to English (UK)=none,none,Switch keyboard layout to English (UK)
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
+Switch keyboard layout to English (US, alternative international)=none,none,Switch keyboard layout to English (US\\, alternative international)
 Switch keyboard layout to Russian=none,none,Switch keyboard layout to Russian
 Switch keyboard layout to Ukrainian=none,none,Switch keyboard layout to Ukrainian
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
+
+[amarok]
+_k_friendly_name=Amarok
+decreaseVolume=,Meta+-,Decrease Volume
+increaseVolume=Meta++,Meta++,Increase Volume
+loveTrack=Meta+L,Meta+L,Last.fm: Love Current Track
+mute=Meta+M,Meta+M,Mute Volume
+next=,Media Next,Next Track
+play_pause=,Media Play,Play/Pause
+playlist_add=Meta+A,Meta+A,Add Media...
+prev=,Media Previous,Previous Track
+rate1=Meta+1,Meta+1,Rate Current Track: 1
+rate2=Meta+2,Meta+2,Rate Current Track: 2
+rate3=Meta+3,Meta+3,Rate Current Track: 3
+rate4=Meta+4,Meta+4,Rate Current Track: 4
+rate5=Meta+5,Meta+5,Rate Current Track: 5
+replay=none,none,Restart current track
+seek_backward_medium=Meta+Shift+-,Meta+Shift+-,Seek Backward by 10 seconds
+seek_forward_medium=Meta+Shift++,Meta+Shift++,Seek Forward by 10 seconds
+showNotificationPopup=Meta+O,Meta+O,Show Notification Popup
+skipTrack=,Meta+S,Last.fm: Skip Current Track
+stop=,Media Stop,Stop
+stop_after_current=Meta+Shift+V,Meta+Shift+V,Stop after current Track
+toggleMainWindow=none,none,Toggle Main Window
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
@@ -33,6 +59,7 @@ _k_friendly_name=KDE Daemon
 {12233b36-fe71-4f97-bf4d-6472f7abe538}=Meta+Print,none,Take Active Window Screenshot
 {23ac0f02-58cf-46f1-8066-4a9253264aa6}=Meta+Ctrl+\\\\,none,Shutdown
 {2d295974-2384-4f7d-b65f-594142516e11}=Print,none,Start Screenshot Tool
+{2d72178e-5b1c-4c5a-91dd-05037195ccf4}=Meta+Ctrl+M,none,Tor
 {34d5e6a6-3c47-4c7b-96c9-5473c831172a}=Meta+Ctrl+D,none,Nautilus downloads
 {476813c9-9977-4b1b-a5d5-2e4d4c6766f4}=Meta+Ctrl+T,none,Konsole
 {709b6a44-854e-4cb7-973b-4f538c79809a}=Shift+Print,none,Take Full Screen Screenshot
@@ -44,6 +71,7 @@ _k_friendly_name=KDE Daemon
 {cb6fd2b5-c1ec-45f9-bd7b-796d34ad419e}=Ctrl+Alt+T,none,Konsole
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 {d8536cb2-6d9b-45e8-94b9-94ef65c27f0b}=Meta+Ctrl+N,none,Nautilus
+{ebfa0671-09cb-42ff-84ee-e4b1a5bb1140}=none,none,Amarok
 {f46fc790-d88e-4e2b-8fec-372ede05308e}=Meta+Ctrl+],none,Reboot
 {f908a49a-c218-442b-9f9a-91de67d018e7}=Meta+Ctrl+E,none,Emacs
 
@@ -209,7 +237,7 @@ Window to Screen 4=none,none,Window to Screen 4
 Window to Screen 5=none,none,Window to Screen 5
 Window to Screen 6=none,none,Window to Screen 6
 Window to Screen 7=none,none,Window to Screen 7
-_k_friendly_name=KDE Control Module
+_k_friendly_name=KWin
 view_actual_size=Ctrl+Alt+0,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out

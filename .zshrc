@@ -79,7 +79,7 @@ if [ -f "$ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] ; t
 fi
 if [ -f "$ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh" ] ; then
   source "$ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh"
-  bindkey '`' autosuggest-accept
+  bindkey '`' autosuggest-execute
 fi
 export PATH=$PATH:/usr/share/javadb/bin/
 export DERBY_HOME=/usr/share/javadb

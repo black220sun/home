@@ -1,0 +1,8 @@
+[Adapters]
+98:22:EF:BD:17:BA_powered=true
+
+[Devices]
+connectedDevices=
+
+[Global]
+bluetoothBlocked=false

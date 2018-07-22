@@ -12,6 +12,12 @@ alias l='ll'
 alias la='ls -A'
 
 # common
+function mv3() {
+  local dir="$HOME/Music/$1"
+  mkdir -p $dir
+  mv -v *.mp3 $dir
+}
+alias cx='chmod +x'
 alias untar='tar zfx *.tar.gz'
 alias clr='clear'
 alias sys='$SUDO systemctl'
@@ -102,9 +108,15 @@ if (( $+commands[yum] )) ; then
     alias pacu='yum upgrade'
 fi
 
+# common
+function pac!() {
+  pac $1
+  echo $1 >> ~/.install/packages
+}
+
 # emacs
 if (( $+commands[emacs] )) ; then
-    export EDITOR='emacs -nw'
+    export EDITOR='emacs'
     alias em='emacs -nw'
     alias sem='$SUDO emacs -nw'
     alias ecfg='emacs -nw ~/.emacs'
