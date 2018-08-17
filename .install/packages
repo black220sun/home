@@ -12,3 +12,8 @@ libreoffice
 rtorrent
 tree
 gitk
+cmake
+python3-pip
+scrot
+mongodb-clients
+rlwrap

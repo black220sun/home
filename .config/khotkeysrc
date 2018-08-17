@@ -1062,7 +1062,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_5_13Actions0]
-CommandURL=/home/black220sun/Downloads/tor-browser_en-US/start-tor-browser.desktop
+CommandURL=/home/black220sun/Downloads/tor-browser_en-US/Browser/start-tor-browser
 Type=COMMAND_URL
 
 [Data_5_13Conditions]

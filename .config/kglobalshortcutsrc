@@ -8,20 +8,20 @@ Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
 
 [amarok]
-_k_friendly_name=Amarok
+_k_friendly_name=amarok
 decreaseVolume=,Meta+-,Decrease Volume
 increaseVolume=Meta++,Meta++,Increase Volume
-loveTrack=Meta+L,Meta+L,Last.fm: Love Current Track
+loveTrack=,Meta+L,Last.fm: Love Current Track
 mute=Meta+M,Meta+M,Mute Volume
 next=,Media Next,Next Track
 play_pause=,Media Play,Play/Pause
 playlist_add=Meta+A,Meta+A,Add Media...
 prev=,Media Previous,Previous Track
-rate1=Meta+1,Meta+1,Rate Current Track: 1
-rate2=Meta+2,Meta+2,Rate Current Track: 2
-rate3=Meta+3,Meta+3,Rate Current Track: 3
-rate4=Meta+4,Meta+4,Rate Current Track: 4
-rate5=Meta+5,Meta+5,Rate Current Track: 5
+rate1=,Meta+1,Rate Current Track: 1
+rate2=,Meta+2,Rate Current Track: 2
+rate3=,Meta+3,Rate Current Track: 3
+rate4=,Meta+4,Rate Current Track: 4
+rate5=,Meta+5,Rate Current Track: 5
 replay=none,none,Restart current track
 seek_backward_medium=Meta+Shift+-,Meta+Shift+-,Seek Backward by 10 seconds
 seek_forward_medium=Meta+Shift++,Meta+Shift++,Seek Forward by 10 seconds
@@ -43,10 +43,10 @@ _k_friendly_name=KDE Daemon
 
 [kded5]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
-Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
+Decrease Screen Brightness=Monitor Brightness Down\tMeta+2,Monitor Brightness Down,Decrease Screen Brightness
 Hibernate=Hibernate,Hibernate,Hibernate
 Increase Keyboard Brightness=Keyboard Brightness Up,Keyboard Brightness Up,Increase Keyboard Brightness
-Increase Screen Brightness=Monitor Brightness Up,Monitor Brightness Up,Increase Screen Brightness
+Increase Screen Brightness=Monitor Brightness Up\tMeta+3,Monitor Brightness Up,Increase Screen Brightness
 PowerOff=Power Off,Power Off,Power Off
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Show System Activity
 Sleep=Sleep,Sleep,Suspend
@@ -77,9 +77,9 @@ _k_friendly_name=KDE Daemon
 
 [kmix]
 _k_friendly_name=Audio Volume
-decrease_volume=Volume Down,Volume Down,Decrease Volume
-increase_volume=Volume Up,Volume Up,Increase Volume
-mute=Volume Mute,Volume Mute,Mute
+decrease_volume=Volume Down\tMeta+F3,Volume Down,Decrease Volume
+increase_volume=Volume Up\tMeta+F4,Volume Up,Increase Volume
+mute=Volume Mute\tMeta+F2,Volume Mute,Mute
 
 [krunner]
 _k_friendly_name=krunner
@@ -88,7 +88,7 @@ run command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,Run Command on clipb
 
 [ksmserver]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,none,Halt Without Confirmation
-Lock Session=Ctrl+Alt+L\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
+Lock Session=Ctrl+Alt+L\tMeta+L,Ctrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,none,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
@@ -243,7 +243,7 @@ view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
-_k_friendly_name=Media Controller
+_k_friendly_name=mediacontrol
 nextmedia=Media Next,Media Next,Media playback next
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous

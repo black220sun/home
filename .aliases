@@ -17,6 +17,7 @@ function mv3() {
   mkdir -p $dir
   mv -v *.mp3 $dir
 }
+alias py='python'
 alias cx='chmod +x'
 alias untar='tar zfx *.tar.gz'
 alias clr='clear'
@@ -137,12 +138,28 @@ if (( $+commands[firefox] )) ; then
     alias ff='firefox'
 fi
 if (( $+commands[nautilus] )) ; then
-    alias nau='nautilus .&'
+  alias naut='nautilus'
+  alias nau='nautilus .&'
+  alias snau='$SUDO nautilus .&'
 elif (( $+commands[dolphin] )) ; then
-    alias nau='dolphin .&'
+  alias naut='dolphin'
+  alias nau='dolphin .&'
+  alias snau='$SUDO dolphin .&'
 fi
 if (( $+commands[systemsettings5] )) ; then
     alias ss5='systemsettings5&'
+fi
+
+# heroku
+if (( $+commands[heroku] )) ; then
+  alias hr='heroku run'
+  alias hrw='heroku run web'
+  alias hrs='heroku restart'
+  alias hc='heroku config'
+  alias hcs='heroku config:set'
+  alias hl='heroku logs --tail'
+  alias hs='heroku stop'
+  alias hsw='heroku stop web'
 fi
 
 # git

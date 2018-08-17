@@ -24,3 +24,6 @@ application/x-extension-xht=firefox.desktop;
 text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;multipart/related;application/x-mimearchive;message/rfc822;=firefox.desktop;
 application/x-desktop=nautilus-autorun-software.desktop;
 application/x-java-archive=org.gnome.FileRoller.desktop;openjdk-8-java.desktop;
+image/png=org.pantheon.photos-viewer.desktop;
+inode/directory=gallery-app.desktop;org.pantheon.photos-viewer.desktop;
+image/jpeg=org.pantheon.photos.desktop;
