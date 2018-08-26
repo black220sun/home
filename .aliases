@@ -13,7 +13,7 @@ alias la='ls -A'
 
 # common
 function mv3() {
-  local dir="$HOME/Music/$1"
+  local dir="$HOME/Music/$@"
   mkdir -p $dir
   mv -v *.mp3 $dir
 }
