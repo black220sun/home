@@ -108,14 +108,14 @@ wallpaperplugin=org.kde.image
 
 [Containments][7][ConfigDialog]
 DialogHeight=480
-DialogWidth=640
+DialogWidth=660
 
 [Containments][7][General]
 ToolBoxButtonState=bottomleft
 ToolBoxButtonY=1062
 
 [Containments][7][Wallpaper][org.kde.image][General]
-Image=file:///home/black220sun/.local/share/wallpapers/73202-morainelake.jpg
+Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
 height=1080
 width=1920
 

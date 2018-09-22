@@ -1,1 +1,1 @@
-pac $(grep -vE '#' packages)
+sudo apt install $(grep -vE '#' packages)

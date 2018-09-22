@@ -4,7 +4,6 @@ konsole
 firefox
 plasma-desktop
 meld
-openjdk-8
 rar
 sbcl
 amarok
@@ -18,3 +17,6 @@ scrot
 mongodb-clients
 rlwrap
 wget
+libncurses-dev
+libgnutls-dev
+xclip

@@ -1,8 +1,13 @@
 [Devices][/org/freedesktop/UDisks2/block_devices/sda1]
 EverMounted=true
 Icon=drive-harddisk
-LastNameSeen=461,1 GiB Hard Drive
+LastNameSeen=279,4 GiB Hard Drive
 LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda2]
+Icon=drive-harddisk
+LastNameSeen=181,7 GiB Hard Drive
+LastSeenMounted=false
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
 EverMounted=true

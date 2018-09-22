@@ -164,10 +164,11 @@ fi
 
 # git
 if (( $+commands[git] )) ; then
+    alias gcl='git clone'
     alias gst='git status -uno'
     alias gsta='git status'
-    alias gm='git merge origin'
-    alias gmm='git merge origin master'
+    alias gm='git merge'
+    alias gmm='git merge master'
     alias gpl='git pull origin'
     alias gpm='git pull origin master'
     alias gd='git diff'
@@ -192,11 +193,11 @@ if (( $+commands[git] )) ; then
     alias gsp='git stash pop'
     alias gss='git stash'
     function gp() {
-	local branch=$1
-	if [ -z $branch ] ; then
+	  local branch=$1
+	  if [ -z $branch ] ; then
 	    branch=`git branch | cut -f2 -d' '`
-	fi
-	git push --set-upstream origin $branch
+	  fi
+	  git push --set-upstream origin $branch
     }
 fi
 
