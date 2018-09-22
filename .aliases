@@ -31,8 +31,8 @@ alias rmr='rm -rvf'
 alias rmv='rm -rf'
 alias cp='cp -r'
 function mcd() {
-    mkdir -p $1
-    cd $1
+  mkdir -p $1
+  cd $1
 }
 alias clog='cat **/*.log'
 alias clog.='cat *.log' 
@@ -51,23 +51,23 @@ alias .......='cd ../../../../../..'
 alias cdr='cd /'
 alias cdi='cd $HOME/IdeaProjects'
 function find-aux() {
-    find $1 -type d -name $2 -print -quit 2> /dev/null
+  find $1 -type d -name $2 -print -quit 2> /dev/null
 }
 function jmp() {
-    if [[ -z $1 ]] ; then
+  if [[ -z $1 ]] ; then
 	cd $HOME
 	return
-    fi
-    local root=$1
-    local dir=$2
-    if [[ -z $dir ]] ; then
+  fi
+  local root=$1
+  local dir=$2
+  if [[ -z $dir ]] ; then
 	root=$HOME
 	dir=$1
-    fi
-    if [[ ! -e $root ]] ; then
-       root=`find-aux $HOME $root`
-    fi
-    cd `find-aux $root $dir`
+  fi
+  if [[ ! -e $root ]] ; then
+	root=`find-aux $HOME $root`
+  fi
+  cd `find-aux $root $dir`
 }
 alias jmp.='jmp .'
 alias jmpr='jmp /'
@@ -75,38 +75,38 @@ alias jmpr='jmp /'
 # sudo
 SUDO=''
 if (( $+commands[sudo] )) ; then
-    alias s='sudo'
-    if [[ $EUID -ne 0 ]] ; then
+  alias s='sudo'
+  if [[ $EUID -ne 0 ]] ; then
 	SUDO='sudo'
-    fi
+  fi
 fi
 
 # apt
 if (( $+commands[apt] )) ; then
-    alias apt='$SUDO apt'
-    alias pac='apt install'
-    alias pacs='apt search'
-    alias pacr='apt remove'
-    alias paca='apt autoremove'
-    alias pacu='apt update && apt upgrade'
+  alias apt='$SUDO apt'
+  alias pac='apt install'
+  alias pacs='apt search'
+  alias pacr='apt remove'
+  alias paca='apt autoremove'
+  alias pacu='apt update && apt upgrade'
 fi
 
 # pacman
 if (( $+commands[pacman] )) ; then
-    alias pacman='$SUDO pacman'
-    alias pac='pacman -S --needed'
-    alias pacs='pacman -Ss'
-    alias pacr='pacman -Rs'
-    alias pacu='pacman -Syu'
+  alias pacman='$SUDO pacman'
+  alias pac='pacman -S --needed'
+  alias pacs='pacman -Ss'
+  alias pacr='pacman -Rs'
+  alias pacu='pacman -Syu'
 fi
 
 # yum
 if (( $+commands[yum] )) ; then
-    alias yum='$SUDO yum'
-    alias pac='yum install'
-    alias pacs='yum search'
-    alias pacr='yum remove'
-    alias pacu='yum upgrade'
+  alias yum='$SUDO yum'
+  alias pac='yum install'
+  alias pacs='yum search'
+  alias pacr='yum remove'
+  alias pacu='yum upgrade'
 fi
 
 # common
@@ -117,25 +117,25 @@ function pac!() {
 
 # emacs
 if (( $+commands[emacs] )) ; then
-    export EDITOR='emacs'
-    alias em='emacs -nw'
-    alias sem='$SUDO emacs -nw'
-    alias ecfg='emacs -nw ~/.emacs'
-    alias ez='emacs -nw ~/.zshrc'
-    alias ea='emacs -nw ~/.aliases'
-    alias el='emacs -nw **/*.log'
-    alias el.='emacs -nw *.log'
-    alias et='emacs -nw *.txt'
+  export EDITOR='emacs -nw'
+  alias em='emacs -nw'
+  alias sem='$SUDO emacs -nw'
+  alias ecfg='emacs -nw ~/.emacs'
+  alias ez='emacs -nw ~/.zshrc'
+  alias ea='emacs -nw ~/.aliases'
+  alias el='emacs -nw **/*.log'
+  alias el.='emacs -nw *.log'
+  alias et='emacs -nw *.txt'
 fi
 
 # zsh
 if [ -f ~/.zshrc ] ; then
-    alias zu='source ~/.zshrc'
+  alias zu='source ~/.zshrc'
 fi
 
 # launch
 if (( $+commands[firefox] )) ; then
-    alias ff='firefox'
+  alias ff='firefox'
 fi
 if (( $+commands[nautilus] )) ; then
   alias naut='nautilus'
@@ -147,7 +147,7 @@ elif (( $+commands[dolphin] )) ; then
   alias snau='$SUDO dolphin .&'
 fi
 if (( $+commands[systemsettings5] )) ; then
-    alias ss5='systemsettings5&'
+  alias ss5='systemsettings5&'
 fi
 
 # heroku
@@ -164,40 +164,52 @@ fi
 
 # git
 if (( $+commands[git] )) ; then
-    alias gcl='git clone'
-    alias gst='git status -uno'
-    alias gsta='git status'
-    alias gm='git merge'
-    alias gmm='git merge master'
-    alias gpl='git pull origin'
-    alias gpm='git pull origin master'
-    alias gd='git diff'
-    alias gdt='git difftool'
-    alias gdh='git diff HEAD'
-    alias gdth='git difftool HEAD'
-    alias gr='git reset'
-    alias grh='git reset --hard'
-    alias grm='git rm'
-    alias grf='git rm -f'
-    alias grc='git rm --cached'
-    alias gf='git fetch'
-    alias gmt='git mergetool'
-    alias gc='git checkout'
-    alias gb='git branch'
-    alias branch='git checkout -b'
-    alias ga='git add'
-    alias gcom='git commit -m'
-    alias gacom='git commit -am'
-    alias gsa='git stash apply'
-    alias gsl='git stash list'
-    alias gsp='git stash pop'
-    alias gss='git stash'
-    function gp() {
-	  local branch=$1
-	  if [ -z $branch ] ; then
-	    branch=`git branch | cut -f2 -d' '`
-	  fi
-	  git push --set-upstream origin $branch
-    }
+  alias gcl='git clone'
+  alias gst='git status -uno'
+  alias gsta='git status'
+  alias gl='git log'
+  alias gbl='git blame'
+  alias gm='git merge'
+  alias gmm='git merge master'
+  alias gpl='git pull origin'
+  alias gpm='git pull origin master'
+  alias gd='git diff'
+  alias gdt='git difftool'
+  alias gdh='git diff HEAD'
+  alias gdth='git difftool HEAD'
+  alias gr='git reset'
+  alias grh='git reset --hard'
+  alias grm='git rm'
+  alias grf='git rm -f'
+  alias grc='git rm --cached'
+  alias gf='git fetch'
+  alias gmt='git mergetool'
+  alias gc='git checkout'
+  alias gc-='git checkout -'
+  alias gcm='git checkout master'
+  alias gb='git branch'
+  alias branch='git checkout -b'
+  alias ga='git add'
+  alias gcom='git commit -m'
+  alias gacom='git commit -am'
+  alias gsa='git stash apply'
+  alias gsl='git stash list'
+  alias gsp='git stash pop'
+  alias gss='git stash'
+  function gp() {
+	local branch=$1
+	if [ -z $branch ] ; then
+	  branch=`git branch | cut -f2 -d' '`
+	fi
+	git push --set-upstream origin $branch
+  }
 fi
 
+# go
+if (( $+commands[go] )) ; then
+  alias gob='go build'
+  alias gop='go tool pprof'
+  alias got='go test'
+  alias gotc='go test -cover'
+  alias gor='go run'
+fi
