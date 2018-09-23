@@ -17,6 +17,7 @@ function mv3() {
   mkdir -p $dir
   mv -v *.mp3 $dir
 }
+alias grep='grep -risn'
 alias py='python'
 alias cx='chmod +x'
 alias untar='tar zfx *.tar.gz'
@@ -50,6 +51,15 @@ alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 alias cdr='cd /'
 alias cdi='cd $HOME/IdeaProjects'
+alias cdd='cd $HOME/Downloads'
+alias cdm='cd $HOME/Music'
+alias cdp='cd $HOME/Pictures'
+# study
+alias cds='cd $HOME/study'
+alias cdg='cd $HOME/study/go/golang-labs'
+alias cdo='cd $HOME/study/os'
+alias cdz='cd $HOME/study/spz'
+# end study
 function find-aux() {
   find $1 -type d -name $2 -print -quit 2> /dev/null
 }
@@ -76,6 +86,7 @@ alias jmpr='jmp /'
 SUDO=''
 if (( $+commands[sudo] )) ; then
   alias s='sudo'
+  alias sds='sudo -s'
   if [[ $EUID -ne 0 ]] ; then
 	SUDO='sudo'
   fi

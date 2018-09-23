@@ -57,11 +57,11 @@ function set_git() {
 function set_symbol() {
   local color
   if [[ $EUID -ne 0 ]] ; then
-	color=" %F{yellow}"
+	symbol=" %F{yellow}>"
   else
-	color=" %F{red}"
+    symbol=" %F{red}#"
   fi
-  echo "$color>%F{white} "
+  echo "$symbol%F{white} "
 }
 function set_zsh_prompt() {
     PROMPT="
