@@ -51,7 +51,7 @@ function set_pwd() {
 function set_git() {
   local branch=`git branch 2> /dev/null`
   if [ ! -z $branch ] ; then
-	echo " %F{white}(on %F{magenta}$(echo $branch | cut -f2 -d' ')%F{white})"
+	echo " %F{white}(on %F{magenta}$(echo $branch | /bin/grep \* | cut -f2 -d' ')%F{white})"
   fi
 }
 function set_symbol() {
