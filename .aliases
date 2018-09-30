@@ -11,12 +11,28 @@ alias ll='ls -ahlF'
 alias l='ll'
 alias la='ls -A'
 
-# common
+# music
 function mv3() {
   local dir="$HOME/Music/$@"
   mkdir -p $dir
   mv -v *.mp3 $dir
 }
+function mva() {
+  if [ -z "$1" ]; then
+	echo "No track name passed"
+  else
+	local dir="$HOME/Music/$ART"
+	mkdir -p $dir
+	local file="$dir/.tracks"
+	echo $@ >> $file
+	xclip -o >> $file
+	echo >> $file 
+  fi
+}
+alias ьмф='mva'
+alias ьм3='mv3'
+
+# common
 alias grep='grep -risn'
 alias py='python'
 alias cx='chmod +x'

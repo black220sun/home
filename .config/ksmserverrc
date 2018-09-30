@@ -11,16 +11,22 @@ count=0
 
 [Session: saved at previous logout]
 clientId1=108d9f9691000152966812800000072490001
-clientId2=1014c120119116000153825260200000017210005
-count=2
-discardCommand1[$e]=rm,$HOME/.config/session/kwin_108d9f9691000152966812800000072490001_1538249887_638775
+clientId2=1014c120119116000153833529600000017310004
+clientId3=1014c120119116000153832460900000017310006
+count=3
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_108d9f9691000152966812800000072490001_1538331974_228251
 program1=kwin_x11
 program2=pulseaudio
-restartCommand1=kwin_x11,-session,108d9f9691000152966812800000072490001_1538249887_638775
+program3=firefox
+restartCommand1=kwin_x11,-session,108d9f9691000152966812800000072490001_1538331974_228251
 restartCommand2=
+restartCommand3=/usr/bin/firefox,--sm-client-id,1014c120119116000153832460900000017310006
 restartStyleHint1=0
 restartStyleHint2=0
+restartStyleHint3=0
 userId1=blacksun
 userId2=blacksun
+userId3=blacksun
 wasWm1=true
 wasWm2=false
+wasWm3=false
