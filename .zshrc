@@ -59,12 +59,12 @@ function set_symbol() {
   if [[ $EUID -ne 0 ]] ; then
 	symbol=" %F{yellow}>"
   else
-    symbol=" %F{red}#"
+	symbol=" %F{red}#"
   fi
   echo "$symbol%F{white} "
 }
 function set_zsh_prompt() {
-    PROMPT="
+  PROMPT="
 $(set_battery)$(set_date) $(set_pwd):
 %F{cyan}%n@%m$(set_git)$(set_symbol)"
 }

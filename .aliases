@@ -20,7 +20,7 @@ function mv3() {
 alias grep='grep -risn'
 alias py='python'
 alias cx='chmod +x'
-alias untar='tar zfx *.tar.gz'
+alias untar='tar zfx'
 alias clr='clear'
 alias sys='$SUDO systemctl'
 alias fh='find . -name'
@@ -179,6 +179,7 @@ if (( $+commands[git] )) ; then
   alias gst='git status -uno'
   alias gsta='git status'
   alias gl='git log'
+  alias gsh='git show'
   alias gbl='git blame'
   alias gm='git merge'
   alias gmm='git merge master'
@@ -210,7 +211,7 @@ if (( $+commands[git] )) ; then
   function gp() {
 	local branch=$1
 	if [ -z $branch ] ; then
-	  branch=`git branch | cut -f2 -d' '`
+	  branch=`git branch | /bin/grep \* | cut -f2 -d' '`
 	fi
 	git push --set-upstream origin $branch
   }
