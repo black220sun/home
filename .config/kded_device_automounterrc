@@ -11,8 +11,8 @@ LastSeenMounted=false
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
 EverMounted=true
-Icon=drive-removable-media-usb
-LastNameSeen=Kindle
+Icon=drive-removable-media-usb-pendrive
+LastNameSeen=Transcend
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sr0]

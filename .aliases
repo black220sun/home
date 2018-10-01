@@ -72,6 +72,7 @@ alias cdm='cd $HOME/Music'
 alias cdp='cd $HOME/Pictures'
 # study
 alias cds='cd $HOME/study'
+alias cdc='cd $HOME/study/cs'
 alias cdg='cd $HOME/study/go/golang-labs'
 alias cdo='cd $HOME/study/os'
 alias cdz='cd $HOME/study/spz'
