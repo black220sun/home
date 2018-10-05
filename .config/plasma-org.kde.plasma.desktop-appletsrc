@@ -112,7 +112,7 @@ DialogWidth=660
 
 [Containments][7][General]
 ToolBoxButtonState=bottomleft
-ToolBoxButtonY=1062
+ToolBoxButtonY=1043
 
 [Containments][7][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png

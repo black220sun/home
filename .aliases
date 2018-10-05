@@ -12,6 +12,8 @@ alias l='ll'
 alias la='ls -A'
 
 # music
+alias mvt='cat $HOME/Music/$ART/.tracks'
+alias mvg='git add -v $HOME/Music/**/.tracks'
 function mv3() {
   local dir="$HOME/Music/$@"
   mkdir -p $dir
@@ -29,6 +31,8 @@ function mva() {
 	echo >> $file 
   fi
 }
+alias ьме='mvt'
+alias ьмп='mvg'
 alias ьмф='mva'
 alias ьм3='mv3'
 

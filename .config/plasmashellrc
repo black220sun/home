@@ -1,5 +1,5 @@
 [PlasmaRunnerManager]
-LaunchCounts=1 services_caffeine.desktop,2 services_Left 4 Dead 2.desktop,1 services_discord.desktop,2 services_fingerprint-gui.desktop,3 services_steam.desktop,1 services_libreoffice-writer.desktop,1 baloosearch_/home/black220sun/Downloads/tor-browser_en-US,1 services_jetbrains-toolbox.desktop,1 recentdocuments_file:///home/black220sun/Downloads/tor-browser_en-US,6 services_screenshot-tool.desktop,1 services_kcm_phonon.desktop
+LaunchCounts=1 baloosearch_/home/black220sun/Downloads/tor-browser_en-US,1 services_caffeine.desktop,2 services_Left 4 Dead 2.desktop,1 services_jetbrains-toolbox.desktop,2 services_fingerprint-gui.desktop,1 services_discord.desktop,1 recentdocuments_file:///home/black220sun/Downloads/tor-browser_en-US,7 services_screenshot-tool.desktop,1 services_kcm_phonon.desktop,3 services_steam.desktop,1 services_libreoffice-writer.desktop
 pluginWhiteList=services,places,shell,bookmarks,recentdocuments,locations,baloosearch
 
 [PlasmaViews][Panel 1][Horizontal1280]
