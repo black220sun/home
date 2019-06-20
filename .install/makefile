@@ -3,8 +3,8 @@
 all: init shell package emacs
 
 init:
-	cp -r .. $HOME
-	cd $HOME
+	cp -r .. $(HOME)
+	cd $(HOME)
 	git submodule init
 	git submodule update
 
@@ -12,7 +12,7 @@ shell: ~/.zshrc ~/.aliases
 	sudo ln -sf ~/.zshrc /root/.zshrc
 	sudo ln -sf ~/.aliases /root/.aliases
 	sudo chsh root -s /bin/zsh
-	sudo chsh $USER -s /bin/zsh
+	sudo chsh $(USER) -s /bin/zsh
 
 package: packages
 	sudo apt install $(grep -vE '#' packages)
