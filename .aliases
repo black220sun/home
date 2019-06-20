@@ -162,10 +162,10 @@ function pac!() {
 if (( $+commands[emacs] )) ; then
     export EDITOR='emacs'
     function em() {
-        emacs -nw $@ &
+        emacs $@ &
     }
     alias emn='emacs -nw'
-    alias sem='$SUDO em'
+    alias sem='$SUDO emacs $@ &'
     alias ecfg='em ~/.emacs'
     alias ez='em ~/.zshrc'
     alias ea='em ~/.aliases'
