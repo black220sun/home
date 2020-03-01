@@ -263,7 +263,7 @@ if (( $+commands[git] )) ; then
     alias gp='git push --set-upstream origin'
     function gp!() {
         local branch=`git branch 2> /dev/null | /bin/grep \* | cut -f2 -d' '`
-        gp $branch
+        git push --set-upstream origin $branch
     }
 fi
 

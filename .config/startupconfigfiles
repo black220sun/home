@@ -1,53 +1,53 @@
 kcminputrc Mouse cursorTheme 'breeze_cursors'
-/home/blacksun/.config/kcminputrc
+/home/black220sun/.config/kcminputrc
 !/etc/xdg/xdg-plasma/kcminputrc
 !/etc/xdg/kcminputrc
-!/home/blacksun/.local/share/config/kcminputrc
+!/home/black220sun/.local/share/config/kcminputrc
 !/usr/share/plasma/config/kcminputrc
 !/usr/local/share/config/kcminputrc
 !/usr/share/config/kcminputrc
 *
 kcminputrc Mouse cursorSize ''
-/home/blacksun/.config/kcminputrc
+/home/black220sun/.config/kcminputrc
 !/etc/xdg/xdg-plasma/kcminputrc
 !/etc/xdg/kcminputrc
-!/home/blacksun/.local/share/config/kcminputrc
+!/home/black220sun/.local/share/config/kcminputrc
 !/usr/share/plasma/config/kcminputrc
 !/usr/local/share/config/kcminputrc
 !/usr/share/config/kcminputrc
 *
 ksplashrc KSplash Theme Breeze
-/home/blacksun/.config/ksplashrc
+/home/black220sun/.config/ksplashrc
 !/etc/xdg/xdg-plasma/ksplashrc
 !/etc/xdg/ksplashrc
-!/home/blacksun/.local/share/config/ksplashrc
+!/home/black220sun/.local/share/config/ksplashrc
 !/usr/share/plasma/config/ksplashrc
 !/usr/local/share/config/ksplashrc
 !/usr/share/config/ksplashrc
 *
 ksplashrc KSplash Engine KSplashQML
-/home/blacksun/.config/ksplashrc
+/home/black220sun/.config/ksplashrc
 !/etc/xdg/xdg-plasma/ksplashrc
 !/etc/xdg/ksplashrc
-!/home/blacksun/.local/share/config/ksplashrc
+!/home/black220sun/.local/share/config/ksplashrc
 !/usr/share/plasma/config/ksplashrc
 !/usr/local/share/config/ksplashrc
 !/usr/share/config/ksplashrc
 *
-kdeglobals KScreen ScaleFactor 1
-/home/blacksun/.config/kdeglobals
+kdeglobals KScreen ScreenScaleFactors ''
+/home/black220sun/.config/kdeglobals
 !/etc/xdg/xdg-plasma/kdeglobals
 !/etc/xdg/kdeglobals
-!/home/blacksun/.local/share/config/kdeglobals
+!/home/black220sun/.local/share/config/kdeglobals
 !/usr/share/plasma/config/kdeglobals
 !/usr/local/share/config/kdeglobals
 !/usr/share/config/kdeglobals
 *
 kcmfonts General forceFontDPI 0
-!/home/blacksun/.config/kcmfonts
+!/home/black220sun/.config/kcmfonts
 !/etc/xdg/xdg-plasma/kcmfonts
 !/etc/xdg/kcmfonts
-!/home/blacksun/.local/share/config/kcmfonts
+!/home/black220sun/.local/share/config/kcmfonts
 !/usr/share/plasma/config/kcmfonts
 !/usr/local/share/config/kcmfonts
 !/usr/share/config/kcmfonts

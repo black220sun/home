@@ -1,6 +1,6 @@
 [PlasmaRunnerManager]
-LaunchCounts=1 baloosearch_/home/black220sun/Downloads/tor-browser_en-US,1 services_caffeine.desktop,2 services_Left 4 Dead 2.desktop,1 services_jetbrains-toolbox.desktop,2 services_fingerprint-gui.desktop,1 services_discord.desktop,1 recentdocuments_file:///home/black220sun/Downloads/tor-browser_en-US,7 services_screenshot-tool.desktop,1 services_kcm_phonon.desktop,3 services_steam.desktop,1 services_libreoffice-writer.desktop
-pluginWhiteList=services,places,shell,bookmarks,recentdocuments,locations,baloosearch
+LaunchCounts=2 services_Left 4 Dead 2.desktop,1 baloosearch_/home/black220sun/Downloads/tor-browser_en-US,2 services_nic.desktop,1 services_libreoffice-writer.desktop,1 services_io.elementary.terminal.desktop,1 services_caffeine.desktop,3 services_steam.desktop,3 services_discord.desktop,1 services_io.elementary.screenshot-tool --area,1 services_netpref.desktop,1 recentdocuments_file:///home/black220sun/Downloads/tor-browser_en-US,2 services_io.elementary.screenshot-tool.desktop,1 services_gparted.desktop,7 services_screenshot-tool.desktop,2 services_fingerprint-gui.desktop,1 services_screenlocker.desktop,1 services_firefox.desktop,1 services_jetbrains-toolbox.desktop,1 services_kcm_phonon.desktop
+pluginWhiteList=services,places,desktopsessions,PowerDevil,shell,bookmarks,recentdocuments,locations,baloosearch
 
 [PlasmaViews][Panel 1][Horizontal1280]
 length=1280
@@ -10,6 +10,9 @@ thickness=30
 length=1920
 panelVisibility=0
 thickness=38
+
+[ScreenConnectors]
+0=eDP-1
 
 [Updates]
 performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js

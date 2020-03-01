@@ -13,7 +13,7 @@ BorderActivateSphere=9
 BorderActivate=9
 
 [Effect-PresentWindows]
-BorderActivate=6
+BorderActivate=9
 BorderActivateAll=7
 BorderActivateClass=9
 
@@ -25,7 +25,7 @@ Bottom=None
 BottomLeft=None
 BottomRight=None
 Left=None
-Right=ShowDesktop
+Right=None
 Top=None
 TopLeft=None
 TopRight=None

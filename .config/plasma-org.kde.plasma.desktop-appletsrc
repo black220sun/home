@@ -26,11 +26,13 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][1][Applets][2][Configuration]
+PreloadWeight=100
 favorites=\\0
 systemApplications=systemsettings.desktop,
 
 [Containments][1][Applets][2][Configuration][General]
 favorites=
+favoritesPortedToKAstats=true
 
 [Containments][1][Applets][2][Configuration][Shortcuts]
 global=Alt+F1
@@ -42,13 +44,23 @@ global=Alt+F1
 immutability=1
 plugin=org.kde.plasma.pager
 
+[Containments][1][Applets][3][Configuration]
+PreloadWeight=0
+
 [Containments][1][Applets][4]
 immutability=1
 plugin=org.kde.plasma.taskmanager
 
+[Containments][1][Applets][4][Configuration]
+PreloadWeight=0
+
 [Containments][1][Applets][5]
 immutability=1
 plugin=org.kde.plasma.systemtray
+
+[Containments][1][Applets][5][Configuration]
+PreloadWeight=0
+SystrayContainmentId=6
 
 [Containments][1][Applets][5][Configuration][Containments][9]
 formfactor=2
@@ -90,12 +102,87 @@ knownItems=org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
+[Containments][1][Applets][6][Configuration]
+PreloadWeight=0
+
 [Containments][1][ConfigDialog]
-DialogHeight=80
+DialogHeight=89
 DialogWidth=1920
+
+[Containments][1][Configuration]
+PreloadWeight=0
 
 [Containments][1][General]
 AppletOrder=3;4;5;6;2
+
+[Containments][6]
+activityId=
+formfactor=2
+immutability=1
+lastScreen=0
+location=3
+plugin=org.kde.plasma.private.systemtray
+wallpaperplugin=org.kde.image
+
+[Containments][6][Applets][10]
+immutability=1
+plugin=org.kde.plasma.clipboard
+
+[Containments][6][Applets][10][Configuration]
+PreloadWeight=0
+
+[Containments][6][Applets][11]
+immutability=1
+plugin=org.kde.plasma.devicenotifier
+
+[Containments][6][Applets][11][Configuration]
+PreloadWeight=0
+
+[Containments][6][Applets][12]
+immutability=1
+plugin=org.kde.plasma.notifications
+
+[Containments][6][Applets][12][Configuration]
+PreloadWeight=0
+
+[Containments][6][Applets][13]
+immutability=1
+plugin=org.kde.discovernotifier
+
+[Containments][6][Applets][13][Configuration]
+PreloadWeight=0
+
+[Containments][6][Applets][14]
+immutability=1
+plugin=org.kde.plasma.bluetooth
+
+[Containments][6][Applets][14][Configuration]
+PreloadWeight=0
+
+[Containments][6][Applets][15]
+immutability=1
+plugin=org.kde.plasma.battery
+
+[Containments][6][Applets][15][Configuration]
+PreloadWeight=0
+
+[Containments][6][Applets][16]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][6][Applets][9]
+immutability=1
+plugin=org.kde.plasma.volume
+
+[Containments][6][Applets][9][Configuration]
+PreloadWeight=0
+
+[Containments][6][Configuration]
+PreloadWeight=0
+
+[Containments][6][General]
+extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.discovernotifier
+knownItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.discovernotifier
 
 [Containments][7]
 activityId=4797ef5e-8546-4628-944e-867bfeed93e9
@@ -109,6 +196,9 @@ wallpaperplugin=org.kde.image
 [Containments][7][ConfigDialog]
 DialogHeight=480
 DialogWidth=660
+
+[Containments][7][Configuration]
+PreloadWeight=0
 
 [Containments][7][General]
 ToolBoxButtonState=bottomleft
@@ -127,3 +217,6 @@ lastScreen=-1
 location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
+
+[Containments][8][Configuration]
+PreloadWeight=0

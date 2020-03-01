@@ -6,9 +6,27 @@ done=akregator-15.08-kickoff
 mtime=1457335207
 
 [disable_kmix.upd]
-ctime=1537624901
+ctime=1582833914
 done=PlasmaVolume_DisableKMixAutostart
-mtime=1456839784
+mtime=1551788927
+
+[fonts_akregator.upd]
+ctime=1561054656
+mtime=1537869877
+
+[fonts_global.upd]
+ctime=1561054656
+done=Fonts_Global
+mtime=1537869877
+
+[fonts_global_toolbar.upd]
+ctime=1561054656
+done=Fonts_Global_Toolbar
+mtime=1537869877
+
+[fonts_kate.upd]
+ctime=1561054656
+mtime=1537869877
 
 [frameworksintegration-5.16-font.upd]
 ctime=1537624864
@@ -16,9 +34,9 @@ done=frameworksintegration-5.16-font.sh
 mtime=1451751702
 
 [gtkbreeze5.5.upd]
-ctime=1529817413
+ctime=1582833822
 done=GTKBreeze5.5
-mtime=1456838822
+mtime=1551787861
 
 [importwizard.upd]
 ctime=1529817433
@@ -35,9 +53,9 @@ ctime=1529817418
 mtime=1457565170
 
 [kde4breeze.upd]
-ctime=1537624899
+ctime=1582833911
 done=5.0KDE4Breeze_2
-mtime=1456838755
+mtime=1551787763
 
 [kmail.upd]
 ctime=1529817433
@@ -64,13 +82,19 @@ done=korganizer-15.08-kickoff
 mtime=1457335207
 
 [krdb_libpathwipe.upd]
-ctime=1537624900
-mtime=1456839600
+ctime=1582833913
+done=LibraryPathWipeOut
+mtime=1568150175
+
+[krunnerplugins.upd]
+ctime=1582833868
+done=5.9KRunnerPlugins
+mtime=1568112006
 
 [kscreenlocker.upd]
-ctime=1537624868
+ctime=1582833862
 done=0.1-autolock
-mtime=1456839246
+mtime=1551788367
 
 [messageviewer.upd]
 ctime=1529817397

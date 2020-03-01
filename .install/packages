@@ -27,3 +27,5 @@ libtiff-dev
 xclip
 gocode
 unrar
+openjdk-8-jdk
+maven
