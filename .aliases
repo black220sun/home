@@ -60,15 +60,53 @@ function mcp() {
 }
 alias cjava='cat **/*.java'
 alias cjava.='cat *.java'
+alias cxml='cat **/*.xml'
+alias cxml.='cat *.xml'
 alias csql='cat **/*.sql'
 alias csql.='cat *.sql'
 alias clog='cat **/*.log'
 alias clog.='cat *.log'
+alias ccob='cat **/*.cob'
+alias ccob.='cat *.cob'
 alias p='ping -c 1 8.8.8.8'
-alias grp='grep -risn'
+alias grp='grep -riIsn'
+alias egrp='egrep -risn'
+function lgrep() {
+    egrep "[-(*]$1[- *]"
+}
+function lgrp() {
+    egrp "[-(*]$1[- *]"
+}
 if (( $+commands[meld] )) ; then
     alias mld='meld $@ &'
 fi
+alias psa='ps aux'
+alias psg='ps | grep'
+alias psag='ps aux | grep'
+function psk() {
+    if [[ -z $2 ]]
+    then
+        $SUDO kill -KILL $(psg $1 | cut -f1 -d' ')
+    else
+        $SUDO kill -KILL $(psg $1 | cut -f2 -d' ')
+    fi
+    psg $1
+}
+function psak() {
+    if [[ -z $2 ]]
+    then
+        $SUDO kill -KILL $(psag $1 | cut -f2 -d' ')
+    else
+        $SUDO kill -KILL $(psag $1 | cut -f3 -d' ')
+    fi
+    psag $1
+}
+function showdot() {
+    local file=$(tempfile)
+    local delay=${2:-2}
+    (dot -Tsvg $1 -o ${file} && firefox ${file}&) && sleep ${delay} || true
+    /bin/rm ${file}
+}
 
 # path
 alias ~='cd $HOME'
@@ -98,7 +136,7 @@ function find-aux() {
 function jmp() {
     if [[ -z $1 ]] ; then
 	    cd $HOME
-	return
+	    return
     fi
     local root=$1
     local dir=$2
@@ -212,13 +250,14 @@ fi
 
 # git
 if (( $+commands[git] )) ; then
+    alias gsw='git show'
     alias gcl='git clone'
     alias gst='git status -uno'
     alias gsta='git status'
-    alias gm='git merge origin'
-    alias gmm='git merge master'
-    alias gpl='git pull origin'
-    alias gpm='git pull origin master'
+    alias gm='git merge --ff origin'
+    alias gmm='git merge --ff master'
+    alias gpl='git pull --ff origin'
+    alias gpm='git pull --ff origin master'
     alias gd='git diff'
     alias gdm='git diff master'
     alias gdt='git difftool'
@@ -229,12 +268,14 @@ if (( $+commands[git] )) ; then
     alias grm='git rm'
     alias grf='git rm -rf'
     alias grc='git rm --cached'
+    alias grv='git revert'
     alias gf='git fetch'
     alias gmt='git mergetool'
     alias gc='git checkout'
     alias gc-='git checkout -'
     alias gcm='git checkout master'
     alias gb='git branch'
+    alias gbd!='git branch | egrep -v "master|develop|\*" | xargs git branch -D'
     alias branch='git checkout -b'
     alias gbl='git blame'
     alias ga='git add'
@@ -261,7 +302,7 @@ if (( $+commands[git] )) ; then
         git log -L $2,$end:$1
     }
     alias gp='git push --set-upstream origin'
-    function gp!() {
+    function gp! () {
         local branch=`git branch 2> /dev/null | /bin/grep \* | cut -f2 -d' '`
         git push --set-upstream origin $branch
     }
