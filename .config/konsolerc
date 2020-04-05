@@ -1,5 +1,5 @@
 [Desktop Entry]
-DefaultProfile=
+DefaultProfile=Profile 2.profile
 
 [Favorite Profiles]
 Favorites=
@@ -10,11 +10,11 @@ ShowMenuBarByDefault=false
 ShowWindowTitleOnTitleBar=true
 
 [MainWindow]
-Height 1080=1080
+Height 1080=1005
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAPpAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1920
+Width 1920=954
 Window-Maximized 720x1280=true
 
 [Notification Messages]

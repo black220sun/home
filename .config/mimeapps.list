@@ -26,4 +26,6 @@ application/x-desktop=nautilus-autorun-software.desktop;
 application/x-java-archive=org.gnome.FileRoller.desktop;openjdk-8-java.desktop;
 image/png=org.pantheon.photos-viewer.desktop;
 inode/directory=gallery-app.desktop;org.pantheon.photos-viewer.desktop;
-image/jpeg=org.pantheon.photos.desktop;
+image/jpeg=io.elementary.photos-viewer.desktop;org.pantheon.photos.desktop;
+application/pdf=calibre-ebook-viewer.desktop;
+application/vnd.ms-publisher=io.elementary.code.desktop;

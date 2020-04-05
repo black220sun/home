@@ -11,31 +11,6 @@ alias ll='ls -ahlF'
 alias l='ll'
 alias la='ls -A'
 
-# music
-alias mvt='cat $HOME/Music/$ART/.tracks'
-alias mvg='git add -v $HOME/Music/**/.tracks'
-function mv3() {
-  local dir="$HOME/Music/$@"
-  mkdir -p $dir
-  mv -v *.mp3 $dir
-}
-function mva() {
-  if [ -z "$1" ]; then
-	echo "No track name passed"
-  else
-	local dir="$HOME/Music/$ART"
-	mkdir -p $dir
-	local file="$dir/.tracks"
-	echo $@ >> $file
-	xclip -o >> $file
-	echo >> $file 
-  fi
-}
-alias ьме='mvt'
-alias ьмп='mvg'
-alias ьмф='mva'
-alias ьм3='mv3'
-
 # common
 alias py='python'
 alias cx='chmod +x'
@@ -85,13 +60,8 @@ alias cdi='cd $HOME/IdeaProjects'
 alias cdd='cd $HOME/Downloads'
 alias cdm='cd $HOME/Music'
 alias cdp='cd $HOME/Pictures'
-# study
-alias cds='cd $HOME/study'
-alias cdc='cd $HOME/study/cs'
-alias cdg='cd $HOME/study/go/golang-labs'
-alias cdo='cd $HOME/study/os'
-alias cdz='cd $HOME/study/spz'
-# end study
+alias cdre='cd $HOME/repos0'
+
 function find-aux() {
     find $1 -type d -name $2 -print -quit 2> /dev/null
 }
@@ -215,9 +185,9 @@ if (( $+commands[git] )) ; then
     alias gcl='git clone'
     alias gst='git status -uno'
     alias gsta='git status'
-    alias gm='git merge origin'
+    alias gm='git merge'
     alias gmm='git merge master'
-    alias gpl='git pull origin'
+    alias gpl='git pull'
     alias gpm='git pull origin master'
     alias gd='git diff'
     alias gdm='git diff master'

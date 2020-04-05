@@ -18,9 +18,9 @@ LastSeenMounted=false
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
 EverMounted=true
-Icon=drive-removable-media-usb-pendrive
-LastNameSeen=elementary OS 0.4.1 Loki
-LastSeenMounted=false
+Icon=drive-removable-media-usb
+LastNameSeen=Kindle
+LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdb5]
 Icon=drive-removable-media-usb-pendrive
