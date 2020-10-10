@@ -57,15 +57,16 @@
 (require 'settings)
 
 ;; snippets
-(require 'yasnippet)
-(setq yas-snippet-dirs '("~/.emacs.d/snippets/"))
-(add-hook 'lisp-mode-hook #'yas-minor-mode)
-(add-hook 'slime-repl-mode-hook #'yas-minor-mode)
-(setq yas-indent-line 'auto)
-(setq yas-also-auto-indent-first-line t)
-(setq yas-also-indent-empty-lines t)
-(yas-reload-all t)
+;; (require 'yasnippet)
+;; (setq yas-snippet-dirs '("~/.emacs.d/snippets/"))
+;; (add-hook 'lisp-mode-hook #'yas-minor-mode)
+;; (add-hook 'slime-repl-mode-hook #'yas-minor-mode)
+;; (setq yas-indent-line 'auto)
+;; (setq yas-also-auto-indent-first-line t)
+;; (setq yas-also-indent-empty-lines t)
+;; (yas-reload-all t)
 
 ;; browser
-(add-to-list 'load-path "~/.emacs.d/emacs-application-framework")
-(require 'eaf)
+;; (add-to-list 'load-path "~/.emacs.d/emacs-application-framework")
+;; (require 'eaf)
+

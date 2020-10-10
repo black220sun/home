@@ -3,7 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (wombat))
+ '(custom-enabled-themes '(wombat))
  '(display-line-numbers nil)
  '(display-time-24hr-format t)
  '(display-time-mode t)
@@ -32,9 +32,9 @@
  '(sh-basic-offset 2)
  '(sh-indentation 2)
  '(shell-file-name "/bin/zsh")
- '(slime-auto-select-connection always)
- '(slime-auto-start (quote always))
- '(slime-net-coding-system (quote utf-8-unix))
+ '(slime-auto-select-connection 'always)
+ '(slime-auto-start 'always)
+ '(slime-net-coding-system 'utf-8-unix)
  '(standart-indent 4)
  '(tab-width 4)
  '(tooltip-mode nil)

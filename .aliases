@@ -168,20 +168,20 @@ function pac!() {
 
 # emacs
 if (( $+commands[emacs] )) ; then
-    export EDITOR='emacs'
-    function em() {
-        emacs $@ &
-    }
-    alias emn='emacs -nw'
-    alias sem='$SUDO emacs $@ &'
-    alias ecfg='em ~/.emacs'
-    alias ez='em ~/.zshrc'
-    alias ea='em ~/.aliases'
-    alias el='em **/*.log'
-    alias el.='em *.log'
-    alias esql='em **/*.sql'
-    alias esql.='em *.sql'
-    alias et='em *.txt'
+  export EDITOR='emacs'
+  alias emn='emacs -nw'
+  alias em='emn'
+  alias sem='$SUDO emacs -nw'
+  alias ecfg='em ~/.emacs'
+  alias ez='em ~/.zshrc'
+  alias ea='em ~/.aliases'
+  alias el='em **/*.log'
+  alias el.='em *.log'
+  alias esql='em **/*.sql'
+  alias esql.='em *.sql'
+  alias et='em *.txt'
+  alias emd='emacs --daemon'
+  alias emc='emacsclient -t'
 fi
 
 # zsh

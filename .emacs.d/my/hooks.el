@@ -24,6 +24,7 @@
 (add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
 (add-hook 'ielm-mode-hook             #'enable-paredit-mode)
 (add-hook 'lisp-mode-hook             #'enable-paredit-mode)
+(add-hook 'lisp-mode-hook             #'slime)
 (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
 (add-hook 'scheme-mode-hook           #'enable-paredit-mode)
 (add-hook 'slime-repl-mode-hook (lambda () (paredit-mode +1)))
@@ -33,20 +34,12 @@
 (add-hook 'slime-repl-mode-hook 'override-slime-repl-bindings-with-paredit)
 
 ;auto-complete-slime
- (add-hook 'slime-mode-hook 'set-up-slime-ac)
- (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
- (eval-after-load "auto-complete"
-   '(add-to-list 'ac-modes 'slime-repl-mode))
+(eval-after-load "auto-complete"
+  '(add-to-list 'ac-modes 'slime-repl-mode))
 
 (defun new-before-save-hook ()
   (when (eq major-mode 'prog-mode)
-    (progn
-      (delete-trailing-whitespace))))
+    (delete-trailing-whitespace)))
 (add-hook 'before-save-hook #'new-before-save-hook)
-
-(defadvice yes-or-no-p (around hack-exit (prompt))
-  (if (string= prompt "Active processes exist; kill them and exit anyway? ")
-      t
-    ad-do-it))
 
 (provide 'hooks)

@@ -7,7 +7,7 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/sda2]
 EverMounted=true
 Icon=drive-harddisk
-LastNameSeen=181,7 GiB Hard Drive
+LastNameSeen=170,3 GiB Hard Drive
 LastSeenMounted=false
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sda5]
@@ -16,15 +16,26 @@ Icon=drive-harddisk
 LastNameSeen=15,9 GiB Hard Drive
 LastSeenMounted=false
 
+[Devices][/org/freedesktop/UDisks2/block_devices/sda6]
+Icon=drive-harddisk
+LastNameSeen=11,3 GiB Hard Drive
+LastSeenMounted=false
+
 [Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
 EverMounted=true
 Icon=drive-removable-media-usb
 LastNameSeen=Kindle
 LastSeenMounted=true
 
-[Devices][/org/freedesktop/UDisks2/block_devices/sdb5]
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb2]
 Icon=drive-removable-media-usb-pendrive
-LastNameSeen=elementary OS 0.4.1 Loki
+LastNameSeen=elementary OS 5.0 Juno
+LastSeenMounted=false
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb5]
+EverMounted=true
+Icon=drive-removable-media-usb-pendrive
+LastNameSeen=elementary OS 5.0 Juno
 LastSeenMounted=false
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdb6]
