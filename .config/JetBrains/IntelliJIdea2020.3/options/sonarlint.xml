@@ -1,0 +1,186 @@
+<application>
+  <component name="SonarLintGlobalSettings">
+    <rules>
+      <Rule key="java:S3437" />
+      <Rule key="java:S1258" />
+      <Rule active="false" key="java:S1774" />
+      <Rule key="java:S1132" />
+      <Rule active="false" key="Web:PageWithoutTitleCheck" />
+      <Rule key="java:S2070" />
+      <Rule key="java:S3282" />
+      <Rule active="false" key="Web:BoldAndItalicTagsCheck" />
+      <Rule key="java:S2196" />
+      <Rule key="java:S2197" />
+      <Rule key="java:S4499" />
+      <Rule key="java:S3047" />
+      <Rule key="java:S818" />
+      <Rule key="java:S3329" />
+      <Rule key="java:S3725" />
+      <Rule key="java:S1641" />
+      <Rule active="false" key="java:S1123" />
+      <Rule key="java:S1244" />
+      <Rule active="false" key="Web:ItemTagNotWithinContainerTagCheck" />
+      <Rule active="false" key="Web:FlashUsesBothObjectAndEmbedCheck" />
+      <Rule key="java:S5194" />
+      <Rule key="java:S3052" />
+      <Rule key="java:S4142" />
+      <Rule key="java:S4266" />
+      <Rule key="java:S2089" />
+      <Rule active="false" key="Web:AvoidCommentedOutCodeCheck" />
+      <Rule key="java:S3577" />
+      <Rule active="false" key="java:S3578" />
+      <Rule key="java:S1996" />
+      <Rule key="java:S1194" />
+      <Rule active="false" key="Web:ImgWithoutAltCheck" />
+      <Rule active="false" key="Web:TableWithoutCaptionCheck" />
+      <Rule active="false" key="Web:S4645" />
+      <Rule active="false" key="Web:S1134" />
+      <Rule active="false" key="Web:S1135" />
+      <Rule key="java:S2096" />
+      <Rule key="java:S2250" />
+      <Rule active="false" key="java:S4276" />
+      <Rule key="java:S4551" />
+      <Rule key="java:S4432" />
+      <Rule key="java:S1109" />
+      <Rule active="false" key="Web:S4084" />
+      <Rule key="java:S5128" />
+      <Rule active="false" key="java:S1108" />
+      <Rule key="java:S4435" />
+      <Rule key="java:S1228" />
+      <Rule key="java:S1107" />
+      <Rule key="java:S2258" />
+      <Rule key="java:S1105" />
+      <Rule key="java:S2658" />
+      <Rule key="java:S3749" />
+      <Rule key="java:S1067" />
+      <Rule key="java:S1188" />
+      <Rule active="false" key="java:S1066" />
+      <Rule active="false" key="Web:S1827" />
+      <Rule active="false" key="java:S1220" />
+      <Rule active="false" key="Web:UnsupportedTagsInHtml5Check" />
+      <Rule key="java:S2260" />
+      <Rule key="java:S2141" />
+      <Rule key="java:S4288" />
+      <Rule active="false" key="java:S2384" />
+      <Rule key="java:S2143" />
+      <Rule key="java:S3750" />
+      <Rule key="java:S3510" />
+      <Rule key="java:S2301" />
+      <Rule key="java:S2148" />
+      <Rule key="java:S1699" />
+      <Rule key="java:S4604" />
+      <Rule key="java:S1698" />
+      <Rule key="java:S1697" />
+      <Rule key="java:S4603" />
+      <Rule key="java:S1213" />
+      <Rule key="java:S2701" />
+      <Rule key="java:S1696" />
+      <Rule key="java:S1850" />
+      <Rule key="java:S4605" />
+      <Rule key="java:S1695" />
+      <Rule key="java:S1694" />
+      <Rule key="java:S2308" />
+      <Rule active="false" key="java:S2309" />
+      <Rule key="java:S1176" />
+      <Rule active="false" key="Web:ServerSideImageMapsCheck" />
+      <Rule key="java:S4174" />
+      <Rule active="false" key="Web:FieldsetWithoutLegendCheck" />
+      <Rule key="java:S1609" />
+      <Rule key="java:S118" />
+      <Rule active="false" key="java:S3242" />
+      <Rule key="java:S2277" />
+      <Rule key="java:S2156" />
+      <Rule key="java:S3366" />
+      <Rule key="java:S1449" />
+      <Rule key="java:S2278" />
+      <Rule active="false" key="java:S113" />
+      <Rule key="java:S1448" />
+      <Rule key="java:S3369" />
+      <Rule key="java:S2039" />
+      <Rule key="java:S1200" />
+      <Rule key="java:S1166" />
+      <Rule active="false" key="Web:MetaRefreshCheck" />
+      <Rule key="java:S2959" />
+      <Rule active="false" key="Web:LinkToImageCheck" />
+      <Rule key="java:S1162" />
+      <Rule key="java:S1160" />
+      <Rule active="false" key="Web:FrameWithoutTitleCheck" />
+      <Rule key="java:S2162" />
+      <Rule key="java:S3373" />
+      <Rule active="false" key="Web:TableHeaderHasIdOrScopeCheck" />
+      <Rule key="java:S2164" />
+      <Rule key="java:S3254" />
+      <Rule key="java:S109" />
+      <Rule key="java:S2047" />
+      <Rule key="java:S103" />
+      <Rule key="java:S2444" />
+      <Rule key="java:S864" />
+      <Rule key="java:S105" />
+      <Rule key="java:S2203" />
+      <Rule active="false" key="java:S1711" />
+      <Rule key="java:S1315" />
+      <Rule key="java:S104" />
+      <Rule key="java:S2325" />
+      <Rule key="java:S1314" />
+      <Rule key="java:S1312" />
+      <Rule key="java:S3658" />
+      <Rule key="java:S1311" />
+      <Rule key="java:S1310" />
+      <Rule key="java:S2208" />
+      <Rule key="java:S3419" />
+      <Rule key="java:S3937" />
+      <Rule key="java:S1151" />
+      <Rule active="false" key="Web:DoctypePresenceCheck" />
+      <Rule active="false" key="Web:S5257" />
+      <Rule key="java:S134" />
+      <Rule key="java:NoSonar" />
+      <Rule active="false" key="Web:S5258" />
+      <Rule active="false" key="Web:S5255" />
+      <Rule active="false" key="Web:S5256" />
+      <Rule active="false" key="Web:S5254" />
+      <Rule key="java:S2693" />
+      <Rule active="false" key="java:S139" />
+      <Rule active="false" key="java:S1309" />
+      <Rule key="java:S3420" />
+      <Rule key="java:S2694" />
+      <Rule key="java:S2057" />
+      <Rule key="java:S2333" />
+      <Rule key="java:S2059" />
+      <Rule key="java:S1943" />
+      <Rule key="java:S3423" />
+      <Rule key="java:S2972" />
+      <Rule key="java:S1942" />
+      <Rule key="java:S138" />
+      <Rule key="java:S2973" />
+      <Rule key="java:S1821" />
+      <Rule active="false" key="java:S2698" />
+      <Rule key="java:S1820" />
+      <Rule key="java:S1941" />
+      <Rule key="java:S2974" />
+      <Rule key="java:S3306" />
+      <Rule key="java:S1147" />
+      <Rule key="java:S1145" />
+      <Rule key="java:S1541" />
+      <Rule key="java:S1142" />
+      <Rule key="java:S121" />
+      <Rule active="false" key="Web:S5148" />
+      <Rule key="java:S881" />
+      <Rule key="java:S122" />
+      <Rule key="java:S3030" />
+      <Rule key="java:S2063" />
+      <Rule key="java:S1939" />
+      <Rule active="false" key="Web:S5264" />
+      <Rule key="java:S3032" />
+      <Rule key="java:S888" />
+      <Rule active="false" key="java:S2187" />
+      <Rule key="java:S2221" />
+      <Rule active="false" key="java:S923" />
+      <Rule active="false" key="Web:S5260" />
+      <Rule active="false" key="java:S2189" />
+      <Rule key="java:S3553" />
+      <Rule active="false" key="java:S5612" />
+      <Rule key="java:S4248" />
+      <Rule key="java:S126" />
+    </rules>
+  </component>
+</application>
