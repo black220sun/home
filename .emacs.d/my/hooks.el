@@ -42,4 +42,13 @@
     (delete-trailing-whitespace)))
 (add-hook 'before-save-hook #'new-before-save-hook)
 
+;; clojure
+(add-hook 'clojure-mode-hook 'lsp)
+(add-hook 'clojure-mode-hook #'enable-paredit-mode)
+(add-hook 'clojurescript-mode-hook 'lsp)
+(add-hook 'clojurescript-mode-hook #'enable-paredit-mode)
+(add-hook 'clojurec-mode-hook 'lsp)
+(add-hook 'clojurec-mode-hook #'enable-paredit-mode)
+(add-hook 'cider-repl-mode-hook #'enable-paredit-mode)
+
 (provide 'hooks)

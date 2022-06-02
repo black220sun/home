@@ -39,7 +39,15 @@
  '(tab-width 4)
  '(tooltip-mode nil)
  '(x-select-enable-clipboard t)
- '(use-dialog-box nil))
+ '(use-dialog-box nil)
+ '(lsp-lens-enable t)
+ '(lsp-signature-auto-activate nil)
+ '(treemacs-space-between-root-nodes nil)
+ '(cider-allow-jack-in-without-project t)
+ '(cider-auto-jump-to-error t)
+ '(cider-auto-select-error-buffer t)
+ '(cider-save-file-on-load t)
+ '(company-minimum-prefix-length 1))
 
 (custom-set-faces
  )

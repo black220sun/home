@@ -1,7 +1,7 @@
 (load "package")
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ;;("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 ;; slime
@@ -52,21 +52,29 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/goflymake"))
 (require 'go-flymake)
 (require 'go-flycheck)
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/my"))
-(require 'hooks)
-(require 'settings)
 
 ;; snippets
-;; (require 'yasnippet)
-;; (setq yas-snippet-dirs '("~/.emacs.d/snippets/"))
-;; (add-hook 'lisp-mode-hook #'yas-minor-mode)
-;; (add-hook 'slime-repl-mode-hook #'yas-minor-mode)
-;; (setq yas-indent-line 'auto)
-;; (setq yas-also-auto-indent-first-line t)
-;; (setq yas-also-indent-empty-lines t)
-;; (yas-reload-all t)
+(require 'yasnippet)
+(setq yas-snippet-dirs '("~/.emacs.d/snippets/"))
+(add-hook 'lisp-mode-hook #'yas-minor-mode)
+(add-hook 'slime-repl-mode-hook #'yas-minor-mode)
+(setq yas-indent-line 'auto)
+(setq yas-also-auto-indent-first-line t)
+(setq yas-also-indent-empty-lines t)
+(yas-reload-all t)
+
+;; clojure
+
+(setq package-selected-packages '(clojure-mode lsp-mode cider lsp-treemacs flycheck company))
+(when (cl-find-if-not #'package-installed-p package-selected-packages)
+  (package-refresh-contents)
+  (mapc #'package-install package-selected-packages))
 
 ;; browser
 ;; (add-to-list 'load-path "~/.emacs.d/emacs-application-framework")
 ;; (require 'eaf)
 
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/my"))
+(require 'hooks)
+(require 'settings)
+(require 'keybinds)
