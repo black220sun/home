@@ -17,14 +17,8 @@ shell: ~/.zshrc ~/.aliases
 package: packages
 	sudo apt install $(grep -vE '#' packages)
 
-emacs: emacs-26.1
-	(cd emacs-26.1 && ./configure && sudo make -j4 install)
-
-emacs-26.1: emacs-26.1.tar.gz
-	tar zxf emacs-26.1.tar.gz
-
-emacs-26.1.tar.gz:
-	wget http://ftp.gnu.org.ua/gnu/emacs/emacs-26.1.tar.gz
+emacs:
+	sudo add-apt-repository ppa:kelleyk/emacs && sudo apt update && sudo apt install emacs28
 
 calibre:
 	sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
