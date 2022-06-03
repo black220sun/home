@@ -1,10 +1,18 @@
+;; neotree
+(global-set-key [f7] 'neotree-hidden-file-toggle)
+(global-set-key [f8] 'neotree-toggle)
+
+;; bookmark
 (global-set-key (kbd "<f6>") 'bookmark-delete)
 (global-set-key (kbd "<f3>") 'bookmark-set)
 (global-set-key (kbd "<f4>") 'bookmark-jump)
 (global-set-key (kbd "<f5>") 'bookmark-bmenu-list)
-;; other stuff
+
+;; slime
 (global-set-key (kbd "C-c M-p") 'slime-sync-package-and-default-directory)
 (global-set-key (kbd "C-c M-r") 'slime-restart-inferior-lisp)
+
+;; paredit ext
 (global-set-key (kbd "C-x <deletechar>") (lambda ()
                                            (interactive)
                                            (paredit-split-sexp)
@@ -18,6 +26,8 @@
                                            (paredit-close-parenthesis)
                                            (kill-region start (point)))))
 (global-set-key (kbd "C-x <C-up>") 'paredit-raise-sexp)
+
+;; git
 (global-set-key (kbd "C-x n") 'git-gutter+-next-hunk)
 (global-set-key (kbd "C-x p") 'git-gutter+-previous-hunk)
 (global-set-key (kbd "C-x l") 'git-gutter+-show-hunk-inline-at-point)
@@ -45,6 +55,8 @@
 (global-set-key (kbd "C-x v r") 'magit-reset)
 (global-set-key (kbd "C-x v v") 'magit-revert)
 (global-set-key (kbd "C-x v s") 'magit-stash)
+
+;; lang fix
 (global-set-key (kbd "C-x и") 'switch-to-buffer)
 (global-set-key (kbd "C-x щ") 'other-window)
 (global-set-key (kbd "C-x ш") 'switch-to-prev-buffer)

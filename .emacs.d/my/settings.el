@@ -57,4 +57,22 @@
 (cua-mode)
 (show-paren-mode)
 
+;; ido
+(ido-mode t)
+(icomplete-mode t)
+(ido-everywhere t)
+
+;; bookmarks
+(setq bookmark-save-flag t)
+(setq bookmark-default-file (concat user-emacs-directory "bookmarks"))
+(when (file-exists-p bookmark-default-file)
+  (bookmark-load bookmark-default-file t))
+
+;; prettify-symbols-mode
+(setq prettify-symbols-alist
+      '(("lambda" . 955)
+        ("alambda" . 955)
+        ("->" . 8594)
+        ("=>" . 8658)))
+
 (provide 'settings)

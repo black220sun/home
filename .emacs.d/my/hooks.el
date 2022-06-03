@@ -42,6 +42,12 @@
     (delete-trailing-whitespace)))
 (add-hook 'before-save-hook #'new-before-save-hook)
 
+;; yasnippet
+(add-hook 'lisp-mode-hook #'yas-minor-mode)
+(add-hook 'clojure-mode-hook #'yas-minor-mode)
+(add-hook 'cider-repl-mode-hook #'yas-minor-mode)
+(add-hook 'slime-repl-mode-hook #'yas-minor-mode)
+
 ;; clojure
 (add-hook 'clojure-mode-hook 'lsp)
 (add-hook 'clojure-mode-hook #'enable-paredit-mode)
