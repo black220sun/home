@@ -56,5 +56,8 @@
 (add-hook 'clojurec-mode-hook 'lsp)
 (add-hook 'clojurec-mode-hook #'enable-paredit-mode)
 (add-hook 'cider-repl-mode-hook #'enable-paredit-mode)
+(add-hook 'clojure-mode-hook #'clj-refactor-mode)
+(add-hook 'clojure-mode-hook (lambda ()
+                               (cljr-add-keybindings-with-prefix "C-c C-m")))
 
 (provide 'hooks)

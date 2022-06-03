@@ -8,6 +8,12 @@
 (global-set-key (kbd "<f4>") 'bookmark-jump)
 (global-set-key (kbd "<f5>") 'bookmark-bmenu-list)
 
+;; highlight
+(global-set-key (kbd "C-x /") 'highlight-symbol-at-point)
+(global-set-key (kbd "C-x <up>") 'highlight-symbol-prev)
+(global-set-key (kbd "C-x <down>") 'highlight-symbol-next)
+(global-set-key (kbd "C-x C-_") 'highlight-symbol-remove-all)
+
 ;; slime
 (global-set-key (kbd "C-c M-p") 'slime-sync-package-and-default-directory)
 (global-set-key (kbd "C-c M-r") 'slime-restart-inferior-lisp)

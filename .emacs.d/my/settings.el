@@ -75,4 +75,7 @@
         ("->" . 8594)
         ("=>" . 8658)))
 
+(setq cljr-insert-newline-after-require nil)
+(setq cljr-favor-prefix-notation nil)
+
 (provide 'settings)

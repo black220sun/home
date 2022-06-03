@@ -16,7 +16,7 @@
         ;; lisp
         slime ;; slime-autoloads
         ;; clojure
-        clojure-mode cider))
+        clojure-mode cider clj-refactor))
 (package-initialize)
 (when (cl-find-if-not #'package-installed-p package-selected-packages)
   (package-refresh-contents)
