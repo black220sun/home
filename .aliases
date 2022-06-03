@@ -175,6 +175,7 @@ if (( $+commands[emacs] )) ; then
   alias ecfg='em ~/.emacs'
   alias ez='em ~/.zshrc'
   alias ea='em ~/.aliases'
+  alias ew='em ~/.work'
   alias el='em **/*.log'
   alias el.='em *.log'
   alias esql='em **/*.sql'
