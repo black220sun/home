@@ -31,3 +31,4 @@ openjdk-8-jdk
 maven
 resolvconf
 jq
+leiningen

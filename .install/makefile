@@ -1,4 +1,4 @@
-.PHONY: all init shell package emacs calibre closure
+.PHONY: all init shell package emacs calibre clojure
 
 all: init shell package emacs
 
@@ -29,5 +29,8 @@ emacs-26.1.tar.gz:
 calibre:
 	sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
 
-closure: closure.sh
-	./closure.sh
+clojure: 
+	curl -O https://download.clojure.org/install/linux-install-1.11.1.1113.sh
+	chmod +x linux-install-1.11.1.1113.sh
+	sudo ./linux-install-1.11.1.1113.sh
+	rm linux-install-1.11.1.1113.sh
