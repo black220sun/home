@@ -53,7 +53,7 @@ function set_pwd() {
 function set_git() {
   local branch=`git branch 2> /dev/null`
   if [ ! -z $branch ] ; then
-	echo " %F{white}(on %F{magenta}$(echo "$branch" | /bin/grep \* | cut -f2- -d' ')%F{white})"
+	echo " %F{white}(on %F{magenta}$(echo "$branch" | /usr/bin/grep \* | cut -f2- -d' ')%F{white})"
   fi
 }
 function set_symbol() {
@@ -87,5 +87,4 @@ if [ -f "$ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh" ] ; then
   source "$ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh"
   bindkey '`' autosuggest-execute
 fi
-export PATH=$PATH:/usr/share/javadb/bin/
-export DERBY_HOME=/usr/share/javadb
+

@@ -30,8 +30,8 @@
 
 ;;(add-to-list 'write-file-functions 'delete-trailing-whitespace)
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-livedown"))
-(require 'livedown)
+;;(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-livedown"))
+;;(require 'livedown)
 
 (require 'go-mode)
 (autoload 'go-mode "go-mode" t nil)
@@ -45,8 +45,22 @@
 (setq yas-also-indent-empty-lines t)
 (yas-reload-all t)
 
+;; asdf
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/asdf.el/"))
+(require 'asdf)
+(asdf-enable)
+
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/my"))
 (require 'settings)
 (require 'hooks)
 (require 'keybinds)
+(require 'o-mode)
+
+(defun tunnel ()
+  (interactive)
+  (cider-nrepl-connect '(:host "localhost"
+                               :port 8777
+                               :repl-type "clj"
+                               :repl-init-function nil
+                               :session-name "remote REPL")))
 

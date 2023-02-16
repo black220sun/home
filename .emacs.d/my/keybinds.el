@@ -12,7 +12,11 @@
 (global-set-key (kbd "C-x /") 'highlight-symbol-at-point)
 (global-set-key (kbd "C-x <up>") 'highlight-symbol-prev)
 (global-set-key (kbd "C-x <down>") 'highlight-symbol-next)
-(global-set-key (kbd "C-x C-_") 'highlight-symbol-remove-all)
+(global-set-key (kbd "C-x C-/") 'highlight-symbol-remove-all)
+
+
+(global-set-key (kbd "C-c <right>") 'paredit-forward-slurp-sexp)
+(global-set-key (kbd "C-c <left>") 'paredit-forward-barf-sexp)
 
 ;; slime
 (global-set-key (kbd "C-c M-p") 'slime-sync-package-and-default-directory)

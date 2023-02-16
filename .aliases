@@ -21,9 +21,9 @@ alias fh='find . -name'
 alias fhi='find . -iname'
 alias \?='which'
 alias mk='mkdir -pv'
-alias rm='/bin/rm -v'
-alias rmr='/bin/rm -rvf'
-alias rmv='/bin/rm -rf'
+alias rm='rm -v'
+alias rmr='rm -rvf'
+alias rmv='rm -rf'
 alias cp='cp -r'
 function mcd() {
     mkdir -p $1
@@ -80,7 +80,7 @@ function showdot() {
     local file=$(tempfile)
     local delay=${2:-2}
     (dot -Tsvg $1 -o ${file} && firefox ${file}&) && sleep ${delay} || true
-    /bin/rm ${file}
+    rm ${file}
 }
 
 # path
@@ -273,7 +273,7 @@ if (( $+commands[git] )) ; then
     }
     alias gp='git push --set-upstream origin'
     function gp! () {
-        local branch=`git branch 2> /dev/null | /bin/grep \* | cut -f2 -d' '`
+        local branch=`git branch 2> /dev/null | grep \* | cut -f2 -d' '`
         git push --set-upstream origin $branch
     }
 fi
@@ -285,4 +285,11 @@ if (( $+commands[go] )) ; then
   alias got='go test'
   alias gotc='go test -cover'
   alias gor='go run'
+fi
+
+# docker
+if (( $+commands[docker] )) ; then
+  function docker-sh () {
+    rlwrap -a docker exec -it $1 /bin/sh
+   }
 fi
